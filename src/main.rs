@@ -6,7 +6,12 @@ use std::path::Path;
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    let _full_cont =fs::read_to_string("./.btrbk")
+    let file = fs::read_to_string("./.btrbk");
+    if file.is_err() {
+        eprintln!("Can't find or read from file ./btrbk");
+        return;
+    }
+    let _full_cont =file
         .expect("Can't read from ./btrbk");
     let contents : Vec<&str> = _full_cont.split("\n").collect();
 
