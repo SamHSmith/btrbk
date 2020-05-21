@@ -8,7 +8,7 @@ fn main() {
 
     let file = fs::read_to_string("./.btrbk");
     if file.is_err() {
-        eprintln!("Can't find or read from file ./btrbk");
+        eprintln!("Can't find or read from file ./.btrbk");
         return;
     }
     let _full_cont =file
