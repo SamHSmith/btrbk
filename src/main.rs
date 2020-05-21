@@ -24,6 +24,10 @@ fn main() {
         }
     }
 
+    cp(from, to);
+}
+
+fn cp(from : String, to: String){
     if from.len() == 0 {
         println!("backup_from must be set in .btrbk");
         return;

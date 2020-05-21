@@ -1,2 +1,3 @@
 backup_from: hi
 backup_to: backups
+btrfs: no
