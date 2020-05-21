@@ -1,0 +1,3 @@
+backup_from: important_folder
+backup_to: folder_of_backups
+btrfs: no
